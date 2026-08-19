@@ -14,13 +14,13 @@
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="wrap header-inner">
       <a class="wordmark" href="#top">FÆHRENHEIT</a>
       <nav class="main-nav" aria-label="Primary">
         <a href="#clothing">Clothing</a>
         <a href="#equipment">Equipment</a>
-        <a href="#manifesto">The Rule</a>
+        <a href="#standard">The Rule</a>
       </nav>
       <a class="btn btn-ghost header-cta" href="#clothing">Shop now</a>
     </div>
@@ -29,6 +29,7 @@
   <main id="main">
 
     <section class="hero" id="top">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <p class="eyebrow">Engineered for high-intensity performance</p>
@@ -38,6 +39,20 @@
             <a class="btn btn-primary" href="#clothing">Shop Clothing</a>
             <a class="btn btn-secondary" href="#equipment">Shop Equipment</a>
           </div>
+          <ul class="trust-row">
+            <li class="trust-item">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="1.5" y="7" width="4.5" height="11.5" rx="1"/><rect x="7.75" y="1.5" width="4.5" height="17" rx="1"/><rect x="14" y="10.5" width="4.5" height="8" rx="1"/></svg>
+              Red / black / greyscale only
+            </li>
+            <li class="trust-item">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10.5 1.5 3 11.5h5.5L9 18.5l7.5-10.5H11z"/></svg>
+              Engineered for intensity
+            </li>
+            <li class="trust-item">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="1.5" y="1.5" width="7.5" height="17" rx="1.2"/><rect x="11" y="1.5" width="7.5" height="17" rx="1.2"/></svg>
+              Clothing + Equipment
+            </li>
+          </ul>
         </div>
         <div class="hero-gauge" aria-hidden="true">
           <svg class="gauge" viewBox="0 0 120 420" preserveAspectRatio="xMidYMax meet">
@@ -61,6 +76,19 @@
       </div>
     </section>
 
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Tees</span><span class="marquee-item">Hoodies</span><span class="marquee-item">Shorts</span>
+        <span class="marquee-item">Leggings</span><span class="marquee-item">Dumbbells</span><span class="marquee-item">Resistance Bands</span>
+        <span class="marquee-item">Recovery Tools</span><span class="marquee-item">Moisture-Wicking</span><span class="marquee-item">Performance Fit</span>
+        <span class="marquee-item">Training Gear</span><span class="marquee-item">Red</span><span class="marquee-item">Black</span><span class="marquee-item">Greyscale</span>
+        <span class="marquee-item">Tees</span><span class="marquee-item">Hoodies</span><span class="marquee-item">Shorts</span>
+        <span class="marquee-item">Leggings</span><span class="marquee-item">Dumbbells</span><span class="marquee-item">Resistance Bands</span>
+        <span class="marquee-item">Recovery Tools</span><span class="marquee-item">Moisture-Wicking</span><span class="marquee-item">Performance Fit</span>
+        <span class="marquee-item">Training Gear</span><span class="marquee-item">Red</span><span class="marquee-item">Black</span><span class="marquee-item">Greyscale</span>
+      </div>
+    </div>
+
     <div class="heat-rule" aria-hidden="true"><div class="heat-rule-fill"></div></div>
 
     <section class="pillars">
@@ -82,18 +110,145 @@
       </article>
     </section>
 
-    <section class="manifesto" id="manifesto">
-      <div class="wrap manifesto-inner">
+    <section class="stats" id="stats">
+      <div class="wrap stats-grid">
+        <div class="stat">
+          <span class="stat-value" data-target="32" data-decimals="0" data-suffix="°">32°</span>
+          <span class="stat-label">Starting line</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-target="98.6" data-decimals="1" data-suffix="°">98.6°</span>
+          <span class="stat-label">Baseline</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-target="212" data-decimals="0" data-suffix="°">212°</span>
+          <span class="stat-label">Max heat</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-target="3" data-decimals="0" data-suffix="">3</span>
+          <span class="stat-label">Colors. Full stop.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <span class="section-tag">About</span>
+          <h2>Discipline is the design.</h2>
+          <p>FÆHRENHEIT isn't chasing seasonal colourways or trend cycles. One palette, two categories, and a construction standard we don't bend on session after session, year after year.</p>
+          <ul class="checklist">
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Red, black, and greyscale — no exceptions</li>
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Two categories: Clothing and Equipment</li>
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Built for training, not trends</li>
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Every piece engineered for intensity</li>
+          </ul>
+        </div>
+        <div class="terminal-card" aria-hidden="true">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">$</span> palette --check</p>
+            <p class="terminal-out">&gt; RED&nbsp;&nbsp;&nbsp;#DC2626&nbsp;&nbsp;LOCKED</p>
+            <p class="terminal-out">&gt; BLACK&nbsp;#020617&nbsp;LOCKED</p>
+            <p class="terminal-out">&gt; GREY&nbsp;&nbsp;SCALE&nbsp;&nbsp;&nbsp;&nbsp;LOCKED</p>
+            <p class="terminal-gap"><span class="terminal-prompt">$</span> status</p>
+            <p class="terminal-out">&gt; INTENSITY ......... MAX</p>
+            <p class="terminal-out">&gt; COMPROMISE ........ NONE</p>
+            <p class="terminal-out terminal-cursor-line">&gt; <span class="cursor-blink">_</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="wrap">
+        <span class="section-tag">Benefits</span>
+        <h2>Every piece, held to the same standard.</h2>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5S5 11 5 15.5a7 7 0 0 0 14 0C19 11 12 2.5 12 2.5Z"/></svg>
+            <h3>Moisture-wicking</h3>
+            <p>Stays dry through the hardest sessions.</p>
+          </article>
+          <article class="benefit-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5v6C4 16.5 7.5 20.5 12 22c4.5-1.5 8-5.5 8-10.5v-6L12 2Z"/></svg>
+            <h3>Built to outlast</h3>
+            <p>Durable construction, not seasonal filler.</p>
+          </article>
+          <article class="benefit-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="10" width="6" height="12" rx="1"/><rect x="9.5" y="4" width="6" height="18" rx="1"/><rect x="16.5" y="13" width="6" height="9" rx="1"/></svg>
+            <h3>Red, black, greyscale</h3>
+            <p>One palette, held on purpose, every drop.</p>
+          </article>
+          <article class="benefit-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c3-6 5-9 8-9s5 3 8 9M9 11V4M15 11V4"/></svg>
+            <h3>Cut for movement</h3>
+            <p>Performance fit that doesn't restrict.</p>
+          </article>
+          <article class="benefit-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="8.5" height="8.5" rx="1"/><rect x="13" y="2.5" width="8.5" height="8.5" rx="1"/><rect x="2.5" y="13" width="8.5" height="8.5" rx="1"/><rect x="13" y="13" width="8.5" height="8.5" rx="1"/></svg>
+            <h3>Zero clutter</h3>
+            <p>Clothing and Equipment. Nothing else to wade through.</p>
+          </article>
+          <article class="benefit-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+            <h3>Engineered for intensity</h3>
+            <p>Designed around training, not trends.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="wrap">
+        <span class="section-tag">How it works</span>
+        <h2>Simple, on purpose.</h2>
+        <div class="how-steps">
+          <div class="how-step">
+            <span class="how-num">01</span>
+            <h3>Pick your category</h3>
+            <p>Clothing or Equipment — no in-between.</p>
+          </div>
+          <div class="how-step">
+            <span class="how-num">02</span>
+            <h3>Gear up in the palette</h3>
+            <p>Every piece red, black, or greyscale. Always matches.</p>
+          </div>
+          <div class="how-step">
+            <span class="how-num">03</span>
+            <h3>Train at full heat</h3>
+            <p>Built to hold up to your most intense session.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="standard" id="standard">
+      <div class="wrap">
         <h2>Red. Black. Greyscale.<br>Nothing else.</h2>
-        <div class="manifesto-grid">
-          <div class="manifesto-item">
-            <h3>A palette held on purpose</h3>
-            <p>No seasonal drops in colours we don't stand behind. Every piece stays sharp in the gym and out of it.</p>
-          </div>
-          <div class="manifesto-item">
-            <h3>Built for intensity</h3>
-            <p>Durable construction and moisture-wicking fabric that hold up to every session, every time.</p>
-          </div>
+        <div class="standard-grid">
+          <article class="standard-card">
+            <h3>No seasonal colours. Ever.</h3>
+            <p>If it's not red, black, or greyscale, it's not FÆHRENHEIT.</p>
+          </article>
+          <article class="standard-card">
+            <h3>No shortcuts on construction.</h3>
+            <p>Every seam and stitch built to hold up to real training.</p>
+          </article>
+          <article class="standard-card">
+            <h3>No noise. Just heat.</h3>
+            <p>We make two things. We make them right.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap closing-inner">
+        <h2>Ready to turn up the heat?</h2>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#clothing">Shop Clothing</a>
+          <a class="btn btn-secondary" href="#equipment">Shop Equipment</a>
         </div>
       </div>
     </section>
@@ -109,7 +264,7 @@
       <nav class="footer-nav" aria-label="Footer">
         <a href="#clothing">Clothing</a>
         <a href="#equipment">Equipment</a>
-        <a href="#manifesto">The Rule</a>
+        <a href="#standard">The Rule</a>
       </nav>
       <p class="footer-copy">© <span id="year"></span> FÆHRENHEIT</p>
     </div>
