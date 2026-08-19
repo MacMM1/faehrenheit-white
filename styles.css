@@ -443,7 +443,6 @@ section h2 { letter-spacing: -0.02em; }
   max-width: 52ch;
   margin: 0 0 1.8rem;
 }
-.about-copy .terminal-card { margin-top: 1.8rem; max-width: 420px; }
 .checklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.9rem; }
 .checklist li {
   display: flex;
@@ -463,42 +462,6 @@ section h2 { letter-spacing: -0.02em; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-
-.terminal-card {
-  background: #0a0a0a;
-  border: 1px solid #27272a;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 24px 50px -28px rgba(0, 0, 0, 0.35);
-}
-.terminal-bar {
-  display: flex;
-  gap: 6px;
-  padding: 12px 14px;
-  background: #141414;
-  border-bottom: 1px solid #27272a;
-}
-.terminal-bar span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #3f3f46;
-}
-.terminal-bar span:first-child { background: var(--red); }
-.terminal-body {
-  padding: 20px 22px 24px;
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  line-height: 1.9;
-  color: #e4e4e7;
-}
-.terminal-body p { margin: 0; }
-.terminal-prompt { color: #f87171; margin-right: 0.4em; }
-.terminal-out { color: #86efac; white-space: pre; }
-.terminal-gap { margin-top: 0.9em !important; }
-.terminal-cursor-line { color: #e4e4e7; }
-.cursor-blink { animation: blink 1s step-end infinite; }
-@keyframes blink { 50% { opacity: 0; } }
 
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; }
@@ -769,11 +732,10 @@ section h2 { letter-spacing: -0.02em; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .gauge-fill, .gauge-dot, .heat-rule-fill, .marquee-track, .cursor-blink {
+  .gauge-fill, .gauge-dot, .heat-rule-fill, .marquee-track {
     animation: none;
   }
   .gauge-fill { transform: scaleY(1); }
   .gauge-dot { opacity: 1; }
   .heat-rule-fill { transform: translateX(0); }
-  .cursor-blink { opacity: 1; }
 }
