@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FÆHRENHEIT — Performance Sportswear &amp; Equipment</title>
+  <meta name="description" content="Red, black, and greyscale kit and equipment, engineered for athletes who refuse to cool down.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">FÆHRENHEIT</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#clothing">Clothing</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#manifesto">The Rule</a>
+      </nav>
+      <a class="btn btn-ghost header-cta" href="#clothing">Shop now</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Engineered for high-intensity performance</p>
+          <h1>Turn up the heat<br>on your training.</h1>
+          <p class="hero-sub">Red, black, and greyscale kit and equipment, built for athletes who refuse to cool down.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#clothing">Shop Clothing</a>
+            <a class="btn btn-secondary" href="#equipment">Shop Equipment</a>
+          </div>
+        </div>
+        <div class="hero-gauge" aria-hidden="true">
+          <svg class="gauge" viewBox="0 0 120 420" preserveAspectRatio="xMidYMax meet">
+            <line x1="60" y1="10" x2="60" y2="410" class="gauge-track"></line>
+            <rect x="52" y="10" width="16" height="400" rx="8" class="gauge-fill-bg"></rect>
+            <rect class="gauge-fill" x="52" y="10" width="16" height="400" rx="8"></rect>
+            <g class="gauge-ticks">
+              <line x1="44" y1="30" x2="76" y2="30"></line>
+              <line x1="44" y1="120" x2="76" y2="120"></line>
+              <line x1="44" y1="210" x2="76" y2="210"></line>
+              <line x1="44" y1="300" x2="76" y2="300"></line>
+              <line x1="44" y1="390" x2="76" y2="390"></line>
+            </g>
+            <circle class="gauge-dot" cx="60" cy="30" r="7"></circle>
+          </svg>
+          <div class="gauge-labels">
+            <span class="gauge-label gauge-label-top">212°<br><small>MAX HEAT</small></span>
+            <span class="gauge-label gauge-label-bottom">98.6°<br><small>BASELINE</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heat-rule" aria-hidden="true"><div class="heat-rule-fill"></div></div>
+
+    <section class="pillars">
+      <article class="pillar" id="clothing">
+        <div class="wrap pillar-inner">
+          <span class="pillar-tag">Performance apparel</span>
+          <h2>Clothing</h2>
+          <p>Moisture-wicking tees, hoodies, shorts, and leggings — cut for movement, built to last a full season of work.</p>
+          <a class="pillar-link" href="#clothing">Shop clothing <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="pillar pillar-alt" id="equipment">
+        <div class="wrap pillar-inner">
+          <span class="pillar-tag">Training gear</span>
+          <h2>Equipment</h2>
+          <p>Dumbbells, resistance bands, and recovery tools for every session — in the gym, on the road, or at home.</p>
+          <a class="pillar-link" href="#equipment">Shop equipment <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="manifesto" id="manifesto">
+      <div class="wrap manifesto-inner">
+        <h2>Red. Black. Greyscale.<br>Nothing else.</h2>
+        <div class="manifesto-grid">
+          <div class="manifesto-item">
+            <h3>A palette held on purpose</h3>
+            <p>No seasonal drops in colours we don't stand behind. Every piece stays sharp in the gym and out of it.</p>
+          </div>
+          <div class="manifesto-item">
+            <h3>Built for intensity</h3>
+            <p>Durable construction and moisture-wicking fabric that hold up to every session, every time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="wordmark wordmark-footer">FÆHRENHEIT</span>
+        <p>Performance Sportswear &amp; Equipment</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#clothing">Clothing</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#manifesto">The Rule</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> FÆHRENHEIT</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
